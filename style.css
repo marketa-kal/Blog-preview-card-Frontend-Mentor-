@@ -28,6 +28,16 @@ a:focus {
     }
 }
 
+h1 a {
+    color: #111;
+}
+
+.author-profile {
+    color: #111;
+    display: inline-flex;
+    
+}
+
 footer a {
     color: white;
     text-decoration: underline;
@@ -85,25 +95,24 @@ h1 {
     }
 }
 
-.publish-date,
+time
 .tag {
     font-size: 0.75rem;
 }
 
 @media (min-width: 1024px) {
-
-    .publish-date,
+    time,
     .tag {
         font-size: 0.875rem;
     }
 }
 
 .text,
-.author-info {
+figure {
     font-size: 0.875rem;
 }
 
-.publish-date,
+time,
 .text {
     font-weight: 500;
 }
@@ -126,14 +135,14 @@ h1 {
     }
 }
 
-.author-info {
+figure {
     font-weight: 800;
 }
 
 
-/* ================= author-info ================= */
+/* ================= figure ================= */
 
-.author-info {
+figure {
     display: flex;
     justify-content: start;
     align-items: center;
@@ -141,7 +150,7 @@ h1 {
 }
 
 
-.author-info img {
+figure img {
     width: 32px;
     height: auto;
     border-radius: 50%;
