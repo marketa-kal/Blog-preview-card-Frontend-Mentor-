@@ -32,6 +32,18 @@ h1 a {
     color: #111;
 }
 
+
+.tag a:active,
+.tag a:focus {
+    color: white;
+}
+
+@media (min-width: 1024px) {
+    .tag a:hover {
+        color: white;
+    }
+}
+
 .author-profile {
     color: #111;
     display: inline-flex;
@@ -43,8 +55,8 @@ footer a {
     text-decoration: underline;
 }
 
-/* ================= .card ================= */
-.card {
+/* ================= article ================= */
+article {
     max-width: 329px;
     background-color: white;
     border: 1px solid #111;
@@ -55,7 +67,7 @@ footer a {
 }
 
 @media (min-width: 1024px) {
-    .card {
+    .article {
         max-width: 384px;
     }
 }
@@ -67,9 +79,9 @@ footer a {
     margin-bottom: 24px;
 }
 
-/* ================= .card-text ================= */
+/* ================= .article-text ================= */
 
-.card-text {
+.article-text {
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -77,9 +89,9 @@ footer a {
     align-content: flex-start;
 }
 
-/* ================= .card-text typography ================= */
+/* ================= .article-text typography ================= */
 
-.card {
+.article {
     color: #111;
     line-height: 150%;
 }
@@ -95,14 +107,14 @@ h1 {
     }
 }
 
-time
-.tag {
+time,
+.tag a {
     font-size: 0.75rem;
 }
 
 @media (min-width: 1024px) {
     time,
-    .tag {
+    .tag a {
         font-size: 0.875rem;
     }
 }
@@ -117,12 +129,13 @@ time,
     font-weight: 500;
 }
 
-.tag {
+.tag a {
     font-weight: 800;
+    color: #111111;
     background-color: #F4D04E;
     border-radius: 4px;
-    padding: 4px 12px;
     align-self: flex-start;
+    padding: 4px 12px;
 }
 
 .text {
