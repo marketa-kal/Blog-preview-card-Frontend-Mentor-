@@ -67,7 +67,7 @@ article {
 }
 
 @media (min-width: 1024px) {
-    .article {
+    article {
         max-width: 384px;
     }
 }
